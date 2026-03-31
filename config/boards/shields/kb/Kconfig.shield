@@ -1,2 +1,2 @@
 config SHIELD_KB
-    def _bool $(shields_list_contains, kb)
+    def _bool $(shields_list_contains,kb)
