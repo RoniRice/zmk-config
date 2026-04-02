@@ -13,6 +13,43 @@
                 , <&macro_tap &kp E>
                 , <&macro_release &kp LGUI>;
         };
+
+        CMD_1: CMD_1 {
+            compatible = "zmk,behavior-macro"
+            #binding-cells = <0>;
+            binfings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp N1>
+                , <&macro_release &kp LGUI>;
+
+        }
+        CMD_2: CMD_2 {
+            compatible = "zmk,behavior-macro"
+            #binding-cells = <0>;
+            binfings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp N2>
+                , <&macro_release &kp LGUI>;
+
+        }
+        CMD_3: CMD_3 {
+            compatible = "zmk,behavior-macro"
+            #binding-cells = <0>;
+            binfings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp N3>
+                , <&macro_release &kp LGUI>;
+
+        }
+        CMD_4: CMD_4 {
+            compatible = "zmk,behavior-macro"
+            #binding-cells = <0>;
+            binfings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp N4>
+                , <&macro_release &kp LGUI>;
+
+        }
     };
 
 
@@ -23,9 +60,9 @@
             bindings = <
                 &mo 1
 
-                &kp Q    &kp W    &kp E
-                &kp A    &kp S    &kp D
-                &kp Z    &kp X    &CMD_E
+                &CMD_1    &CMD_2    &CMD_3
+                &CMD_4    &CMD_E    &kp D
+                &kp Z     &kp X     &kp BACKSPACE
             >;
         };
 
