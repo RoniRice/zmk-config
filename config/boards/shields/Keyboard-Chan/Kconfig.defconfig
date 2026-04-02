@@ -1,4 +1,4 @@
-if SHIELD_KB
+if SHIELD_KEYBOARD-CHAN
 
 config ZMK_KEYBOARD_NAME
     default "Keyboard-Chan"
